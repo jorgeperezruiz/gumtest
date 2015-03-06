@@ -1,4 +1,4 @@
-package com.akudreams;
+package com.akudreams.model;
 
 public class ItemImage {
     private String url;

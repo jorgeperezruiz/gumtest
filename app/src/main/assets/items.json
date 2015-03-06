@@ -1,0 +1,38 @@
+[
+  {
+    "owner": {
+      "phone_number": "07450424210",
+      "email": "akumayken@gmail.com",
+      "account_creation_date": "2 years ago",
+      "name": "Jorge"
+    },
+    "images": [
+      "Catch the latest movies and TV shows",
+      "No subscription required",
+      "Already installed on your hudl"
+    ],
+    "price": "£20",
+    "location": "Malaga, Spain",
+    "title": "Final Fantasy VII",
+    "description": "Best videogame you can play",
+    "dataPosted": "today"
+  },
+  {
+    "owner": {
+      "phone_number": "07450424210",
+      "email": "akumayken@gmail.com",
+      "account_creation_date": "2 years ago",
+      "name": "Jorge"
+    },
+    "images": [
+      "Catch the latest movies and TV shows",
+      "No subscription required",
+      "Already installed on your hudl"
+    ],
+    "price": "£30",
+    "location": "Malaga, Spain",
+    "title": "Zelda",
+    "description": "Best videogame you can play. N64",
+    "dataPosted": "yesterday"
+  }
+]

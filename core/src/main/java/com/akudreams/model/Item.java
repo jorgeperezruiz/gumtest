@@ -1,4 +1,4 @@
-package com.akudreams;
+package com.akudreams.model;
 
 import java.util.List;
 
