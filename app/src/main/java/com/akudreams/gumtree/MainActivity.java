@@ -1,9 +1,11 @@
 package com.akudreams.gumtree;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.Button;
+
+import com.novoda.notils.caster.Views;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -11,27 +13,26 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button n64Button = Views.findById(this, R.id.nintendo_64_button);
+        n64Button.setOnClickListener(n64Listener);
+
+        Button gameboyButton = Views.findById(this, R.id.game_boy_button);
+        gameboyButton.setOnClickListener(gameboyListener);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    private final View.OnClickListener n64Listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // TODO implement
         }
+    };
 
-        return super.onOptionsItemSelected(item);
-    }
+    private final View.OnClickListener gameboyListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // TODO implement
+        }
+    };
+
 }
