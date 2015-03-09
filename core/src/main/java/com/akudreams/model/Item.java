@@ -5,14 +5,16 @@ import java.util.List;
 public class Item {
     private List<ItemImage> images;
     private ItemOwner owner;
+    private String title;
     private String price;
     private String location;
     private String description;
     private String datePosted;
 
-    public Item(List<ItemImage> images, ItemOwner owner, String price, String location, String description, String datePosted) {
+    public Item(List<ItemImage> images, ItemOwner owner, String title, String price, String location, String description, String datePosted) {
         this.images = images;
         this.owner = owner;
+        this.title = title;
         this.price = price;
         this.location = location;
         this.description = description;
@@ -25,6 +27,10 @@ public class Item {
 
     public ItemOwner getOwner() {
         return owner;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public String getPrice() {

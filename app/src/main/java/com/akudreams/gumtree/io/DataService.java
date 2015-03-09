@@ -31,7 +31,7 @@ public class DataService {
         this.responseParser = responseParser;
     }
 
-    private List<Item> retrieveResponse() {
+    public List<Item> retrieveResponse() {
         Item[] response = null;
         try {
             response = responseParser.parse(fileManager.open(APPLICATIONS_FILE));

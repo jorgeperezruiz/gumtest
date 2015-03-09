@@ -15,7 +15,7 @@
     "location": "Malaga, Spain",
     "title": "Final Fantasy VII",
     "description": "Best videogame you can play",
-    "dataPosted": "today"
+    "datePosted": "today"
   },
   {
     "owner": {
@@ -33,6 +33,6 @@
     "location": "Malaga, Spain",
     "title": "Zelda",
     "description": "Best videogame you can play. N64",
-    "dataPosted": "yesterday"
+    "datePosted": "yesterday"
   }
 ]

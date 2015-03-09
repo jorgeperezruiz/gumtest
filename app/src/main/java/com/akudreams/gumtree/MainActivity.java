@@ -6,14 +6,23 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.akudreams.gumtree.io.DataService;
+import com.akudreams.model.Item;
 import com.novoda.notils.caster.Views;
 
+import java.util.List;
+
 public class MainActivity extends ActionBarActivity {
+
+    private List<Item> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // TODO Load in background
+        items = DataService.newInstance(this).retrieveResponse();
 
         Button n64Button = Views.findById(this, R.id.nintendo_64_button);
         n64Button.setOnClickListener(n64Listener);
