@@ -1,5 +1,6 @@
 package com.akudreams.gumtree;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -24,14 +25,16 @@ public class MainActivity extends ActionBarActivity {
     private final View.OnClickListener n64Listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // TODO implement
+            Intent intent = new Intent(MainActivity.this, ItemDetailActivity.class);
+            startActivity(intent);
         }
     };
 
     private final View.OnClickListener gameboyListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // TODO implement
+            Intent intent = new Intent(MainActivity.this, ItemDetailActivity.class);
+            startActivity(intent);
         }
     };
 
