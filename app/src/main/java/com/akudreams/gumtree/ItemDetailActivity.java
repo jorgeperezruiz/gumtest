@@ -3,6 +3,9 @@ package com.akudreams.gumtree;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 
@@ -20,6 +23,16 @@ public class ItemDetailActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_detail);
 
+        ObservableScrollView scrollView = Views.findById(this, R.id.scroll_view);
+        FloatingActionButton floatingActionButton = Views.findById(this, R.id.fabbutton);
+        floatingActionButton.attachToScrollView(scrollView);
+        floatingActionButton.setOnClickListener(onContactUser);
+
+        setUpToolbar();
+        setUpContent();
+    }
+
+    private void setUpContent() {
         Item item = (Item) getIntent().getExtras().get(ITEM_EXTRA);
         setTitle(item.getTitle());
 
@@ -39,18 +52,27 @@ public class ItemDetailActivity extends ActionBarActivity {
         userNameView.setText(item.getOwner().getName());
         TextView userCreationDateView = Views.findById(this, R.id.user_creation_date);
         userCreationDateView.setText(item.getOwner().getAccountCreationDate());
+    }
 
-        ObservableScrollView scrollView = Views.findById(this, R.id.scroll_view);
-        FloatingActionButton floatingActionButton = Views.findById(this, R.id.fabbutton);
-        floatingActionButton.attachToScrollView(scrollView);
-        floatingActionButton.setOnClickListener(onContactUser);
+    private void setUpToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.toolbar_menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private final View.OnClickListener onContactUser = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            // TODO show fragment dialog so the user can contact with seller
         }
     };
-
 
 }

@@ -1,9 +1,25 @@
 <resources>
 
   <!-- Base application theme. -->
-  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="android:displayOptions">showTitle|homeAsUp|showHome</item>
-    <item name="android:icon">@android:color/transparent</item>
+    <item name="colorPrimary">#4CAF50</item>
+    <item name="colorPrimaryDark">#388E3C</item>
+    <item name="android:actionOverflowButtonStyle">@style/CustomOverflow</item>
+  </style>
+
+
+  <style name="CustomOverflow">
+    <!-- TODO Use proper icon
+    <item name="android:src">@drawable/envelope</item>
+    -->
+
+  </style>
+
+  <style name="ToolbarStyle" parent="AppTheme">
+    <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+    <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+    <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
   </style>
 
 
