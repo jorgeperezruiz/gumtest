@@ -1,6 +1,8 @@
 package com.akudreams.model;
 
-public class ItemOwner {
+import java.io.Serializable;
+
+public class ItemOwner implements Serializable {
     private String name;
     private String phoneNumber;
     private String email;

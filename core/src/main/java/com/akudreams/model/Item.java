@@ -1,8 +1,9 @@
 package com.akudreams.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Item {
+public class Item implements Serializable {
     private List<ItemImage> images;
     private ItemOwner owner;
     private String title;

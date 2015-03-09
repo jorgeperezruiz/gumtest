@@ -1,6 +1,8 @@
 package com.akudreams.model;
 
-public class ItemImage {
+import java.io.Serializable;
+
+public class ItemImage implements Serializable {
     private String url;
 
     public ItemImage(String url) {

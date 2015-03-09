@@ -35,6 +35,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, ItemDetailActivity.class);
+            intent.putExtra(ItemDetailActivity.ITEM_EXTRA, items.get(0));
             startActivity(intent);
         }
     };
@@ -43,6 +44,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, ItemDetailActivity.class);
+            intent.putExtra(ItemDetailActivity.ITEM_EXTRA, items.get(1));
             startActivity(intent);
         }
     };
