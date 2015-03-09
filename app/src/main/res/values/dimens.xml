@@ -2,5 +2,9 @@
   <!-- Default screen margins, per the Android Design guidelines. -->
   <dimen name="normal_margin">16dp</dimen>
   <dimen name="activity_vertical_margin">16dp</dimen>
-  <dimen name="view_pager_height">250dp</dimen>
+  <dimen name="view_pager_height">280dp</dimen>
+  <dimen name="title_size">18sp</dimen>
+  <dimen name="description_size">16sp</dimen>
+  <dimen name="side_data_size">14sp</dimen>
+  <dimen name="text_top_separation">8dp</dimen>
 </resources>
