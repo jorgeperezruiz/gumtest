@@ -6,14 +6,16 @@
   tools:context=".MainActivity">
 
   <Button
-    android:id="@+id/game_boy_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
-
-  <Button
-    android:id="@+id/nintendo_64_button"
+    android:id="@+id/item_1_button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="end"/>
+    android:text="@string/item_1_button"/>
+
+  <Button
+    android:id="@+id/item_2_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:text="@string/item_2_button"/>
 
 </FrameLayout>

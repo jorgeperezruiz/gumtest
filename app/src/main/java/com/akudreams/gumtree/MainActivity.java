@@ -24,10 +24,10 @@ public class MainActivity extends ActionBarActivity {
         // TODO Load in background
         items = DataService.newInstance(this).retrieveResponse();
 
-        Button n64Button = Views.findById(this, R.id.nintendo_64_button);
+        Button n64Button = Views.findById(this, R.id.item_2_button);
         n64Button.setOnClickListener(n64Listener);
 
-        Button gameboyButton = Views.findById(this, R.id.game_boy_button);
+        Button gameboyButton = Views.findById(this, R.id.item_1_button);
         gameboyButton.setOnClickListener(gameboyListener);
     }
 
