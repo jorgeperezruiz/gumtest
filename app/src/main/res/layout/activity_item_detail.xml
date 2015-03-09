@@ -1,38 +1,44 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/container"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:padding="@dimen/activity_horizontal_margin"
-  tools:context="com.akudreams.gumtree.ItemDetailActivity">
+  android:layout_height="match_parent">
 
-  <LinearLayout
+  <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <android.support.v4.view.ViewPager
-      android:id="@+id/images_pager"
+    <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="@dimen/view_pager_height" />
+      android:layout_height="wrap_content"
+      android:paddingBottom="@dimen/normal_margin"
+      android:orientation="vertical">
 
-    <TextView
-      android:id="@+id/title"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      <android.support.v4.view.ViewPager
+        android:id="@+id/images_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_pager_height" />
 
-    <TextView
-      android:id="@+id/description"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/normal_margin"
+        android:paddingLeft="@dimen/normal_margin" />
 
-  </LinearLayout>
+      <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/normal_margin"
+        android:paddingLeft="@dimen/normal_margin" />
+
+    </LinearLayout>
+  </ScrollView>
 
   <com.melnykov.fab.FloatingActionButton
     android:id="@+id/fabbutton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom|end"
-    android:layout_margin="@dimen/activity_horizontal_margin" />
+    android:layout_margin="@dimen/normal_margin" />
 
 </FrameLayout>
