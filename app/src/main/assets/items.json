@@ -21,18 +21,18 @@
     "owner": {
       "phone_number": "07450424210",
       "email": "akumayken@gmail.com",
-      "account_creation_date": "2 years ago",
+      "account_creation_date": "5 years ago",
       "name": "Jorge"
     },
     "images": [
-      "Catch the latest movies and TV shows",
-      "No subscription required",
-      "Already installed on your hudl"
+      "http://i.imgur.com/ToM64.jpg",
+      "https://sites.google.com/site/apethebug/zelda-oc-f.jpg",
+      "https://webshop.cashconverters.com.au/thumbnail/850x520/1650717-the-legend-of-zelda-ocarina-of-time-collectors-edition--nintendo-64-game-cartridge-0.jpg"
     ],
     "price": "£30",
     "location": "Malaga, Spain",
-    "title": "Zelda",
-    "description": "Best videogame you can play. N64",
+    "title": "Zelda Ocarina Of Time",
+    "description": "The Legend of Zelda: Ocarina of Time is a 1998 action-adventure video game developed by Nintendo's Entertainment Analysis and Development division for the Nintendo 64 video game console. The Legend of Zelda: Ocarina of Time is a 1998 action-adventure video game developed by Nintendo's Entertainment Analysis and Development division for the Nintendo 64 video game console.",
     "datePosted": "yesterday"
   }
 ]
